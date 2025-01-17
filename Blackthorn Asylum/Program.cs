@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.ComponentModel.Design;
 
 Console.WriteLine("Welcome to Blackthorn Asylum");
 Console.WriteLine("Tonight, you are here to uncover it's secrets.");
@@ -33,8 +34,29 @@ if (input2 == "straight")
     Console.WriteLine("You continue down the hallway. The hallway seems to stretch on forever, and the air feels colder with each step.");
     Console.WriteLine("Finally, you reach the end of the hall. To your surprise there is an arched open doorway that leads to what you only presume to be a dining hall.");
     Console.WriteLine("You hear something scurry in the shadows, but when you shine the light around, there's nothing there.");
-    Console.WriteLine("Do you go [straight] into the dining hall or go back to the [foyer]?");
+    Console.WriteLine("Do you go straight into the [dining hall] or run away back to the [foyer]?");
+
 }
+
+
+string input3 = Console.ReadLine();
+
+    if (input3 == "dining hall") 
+{
+    Console.WriteLine("You step into the dining hall. A grand table stretches the length of the room, its surface covered in cracked plates and tarnished silverware.");
+    Console.WriteLine("You start to move across the room, carefully stepping over the left behind debris.");
+    Console.WriteLine("On the far wall, a portrait of Dr. Elias Blackthorn hangs, completely unharmed by the fire.");
+    Console.WriteLine("His eyes seem to follow you as you get closer to it. You start to feel uneasy.");
+    Console.WriteLine("Do you [investigate] or turn around to go [back]");
+
+}
+
+    else if (input3 == "foyer")
+{
+    Console.WriteLine("you go to the foyer test.");
+}
+
+
 else if (input2 == "right")
 {
     Console.WriteLine("You turn to the door on your right and gently push it open. The room inside is a study, long forgotten by time.");
