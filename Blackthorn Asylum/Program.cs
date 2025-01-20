@@ -4,7 +4,9 @@ using System.ComponentModel.Design;
 //Step 1: introduction
 
 Console.WriteLine("Welcome to the Blackthorn Asylum...");
-Console.WriteLine("Tonight, you are here to uncover it's secrets or die trying...");
+Console.WriteLine("What is your name...?");
+string playername = Console.Readline();
+Console.WriteLine($"{playername}, tonight you are here to uncover it's secrets or die trying...");
 Console.WriteLine("The choices you make will determine your fate...");
 Console.WriteLine("The Blackthorn Aslyum awaits you... enter if you dare...");
 Console.WriteLine("Type START GAME to begin.");
@@ -76,6 +78,12 @@ string input4 = Console.ReadLine();
     Console.WriteLine("You collapse onto the floor. Your limp lifeless empty vessel lays still.");
     Console.WriteLine("You failed to uncover the secrets hidden inside and your ghost is forever trapped within the walls of the Blackthorn Asylum...");
     Console.WriteLine("** GAME OVER **");
+
+        bool isplayeralive = false; 
+        bool didescape = false;
+
+        Console.WriteLine($"Did you survive : {isplayeralive}");
+        Console.WriteLine($"Did you escape : {didescape}");
     
 }
 
@@ -88,10 +96,16 @@ string input4 = Console.ReadLine();
     Console.WriteLine("You quickly start to make your way out of the dining hall. As you walk down the endless hallway, the sound of banging erupts.");
     Console.WriteLine("You realize its coming from the walls... your pace shifts from walking to running. The banging becomes faster and louder, causing your ears to ring.");
     Console.WriteLine("Racing down the toward the front door, but no matter how fast or far you go, it remains just out of reach.");
-    Console.WriteLine("The banging is now deafing. The walls begin to close in on you. You claw at the narrowing walls, desperate for escape, but it’s no use.");
+    Console.WriteLine("The banging is now deafening. The walls begin to close in on you. You claw at the narrowing walls, desperate for escape, but it’s no use.");
     Console.WriteLine("Your flashlight slips from your grasp, its beam flickering out as the crushing darkness envelops you completely.");
     Console.WriteLine("You failed to uncover the secrets hidden inside and your ghost is forever trapped within the walls of Blackthorn Asylum...");
     Console.WriteLine("** GAME OVER **");
+        
+    bool isplayeralive = false; 
+    bool didescape = false;
+
+    Console.WriteLine($"Did you survive : {isplayeralive}");
+    Console.WriteLine($"Did you escape : {didescape}");
 
 }
 
@@ -99,14 +113,20 @@ string input4 = Console.ReadLine();
 
     else if (input3 == "foyer")
 {
-    Console.WriteLine("The darkness you begin to feel overwhelms you and your gut takes over. Before you know it you are sprinting out of the dining hall.");
+    Console.WriteLine("The darkness you begin to feel overwhelms you, your gut takes over. Before you know it you are sprinting out of the dining hall.");
     Console.WriteLine("As you dart down the never-ending hallway, you hear heavy footsteps racing towards you from behind.");
     Console.WriteLine("You don't dare to peak over you shoulder as you run away. Your heart is pounding as your flashlight guides you to the front door.");
-    Console.WriteLine("You reach the front door in a panic and twist the doorknob. You swing the door open and escape. You leap down the stairs and jump to your car.");
+    Console.WriteLine("You reach the front door in a panic and twist the doorknob. You swing the door open and escape. You leap down the stairs and jump into your car.");
     Console.WriteLine("You drive away in a hurry, flooring the gas pedal, still too afraid to look behind you...");
     Console.WriteLine("You've made it out unscathed but have failed to uncover the secrets left within the crumbling walls of the Blackthorn Asylum.");
     Console.WriteLine("Better luck next time... if you dare return again.");
     Console.WriteLine(" ** GAME OVER **");
+
+        bool isplayeralive = true; 
+        bool didescape = true;
+
+        Console.WriteLine($"Did you survive : {isplayeralive}");
+        Console.WriteLine($"Did you escape : {didescape}");
 
 }
 
@@ -135,12 +155,18 @@ else if (input2 == "right")
     else if (input5 == "crawl")
     { 
     Console.WriteLine("You kneel down and push open the tiny door, its rusty hinges groaning. The passage way is cramped and suffocating.");
-    Console.WriteLine("As you crawl through, your flashlight flickers, illuminating unsettling carvings etched into the walls");
+    Console.WriteLine("As you crawl through, your flashlight flickers, illuminating unsettling carvings engraved into the walls");
     Console.WriteLine("Suddenly, you hear a voice whispering incoherently, so close it feels like it’s coming from behind you.");
     Console.WriteLine("Before you can react, the ground beneath you gives away, and you fall through. Your body hits the cold, hard stone floor.");
     Console.WriteLine("You lay paralyzed. The whispers distort, transforming into sinister, mocking laughter that echoes you bleeding ears.");
     Console.WriteLine("You failed to uncover the secrets hidden inside and your ghost is forever trapped within the walls of Blackthorn Asylum...");
     Console.WriteLine("** GAME OVER **");
+
+        bool isplayeralive = false; 
+        bool didescape = false;
+
+        Console.WriteLine($"Did you survive : {isplayeralive}");
+        Console.WriteLine($"Did you escape : {didescape}");
 
     
     }
@@ -159,6 +185,12 @@ else if (input2 == "right")
     Console.WriteLine("You make it to your car and watch as the Blackthorn Asylum comes crumbling down.");
     Console.WriteLine("Congratulations, you made it out alive and successfully uncovered the secrets of Dr.Elias Blackthorn.");
 
+        bool isplayeralive = true; 
+        bool didescape = true;
+
+        Console.WriteLine($"Did you survive : {isplayeralive}");
+        Console.WriteLine($"Did you escape : {didescape}");
+
 }
     else if (input6 == "door")
     {
@@ -167,9 +199,15 @@ else if (input2 == "right")
         Console.WriteLine("As you crawl through, your flashlight flickers, illuminating unsettling carvings etched into the walls.");
         Console.WriteLine("Suddenly, you hear a voice whispering incoherently, so close it feels like it’s coming from behind you.");
         Console.WriteLine("Before you can react, the ground beneath you gives away, and you fall through. Your body hits the cold, hard stone floor.");
-        Console.WriteLine("You lay paralyzed. The whispers distort, transforming into sinister, mocking laughter that echoes you bleeding ears.");
+        Console.WriteLine("You lay paralyzed. The whispers distort, transforming into sinister, mocking laughter that echoes through your bleeding ears.");
         Console.WriteLine("You failed to uncover the secrets hidden inside and your ghost is forever trapped within the walls of Blackthorn Asylum...");
         Console.WriteLine("** GAME OVER **");
+
+        bool isplayeralive = false; 
+        bool didescape = false;
+
+        Console.WriteLine($"Did you survive : {isplayeralive}");
+        Console.WriteLine($"Did you escape : {didescape}");
 
 
     }
