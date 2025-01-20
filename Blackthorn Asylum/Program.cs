@@ -57,7 +57,7 @@ string input3 = Console.ReadLine();
     Console.WriteLine("You start to move across the room, carefully stepping over the left behind debris.");
     Console.WriteLine("On the far wall, a portrait of Dr. Elias Blackthorn hangs, completely undisturbed by the fire.");
     Console.WriteLine("His eyes seem to follow you as you approach it. You begin to feel uneasy.");
-    Console.WriteLine("Do you [investigate] the portrait or turn around to [back]?");
+    Console.WriteLine("Do you [investigate] the portrait or turn around to go [back]?");
 
 //Step 5: Inspect the portrait outcome
 
@@ -75,8 +75,7 @@ string input4 = Console.ReadLine();
     Console.WriteLine("You feel as if your soul is being ripped from your body. As you try to gasp for air your eyes slowly roll to the back of your head.");
     Console.WriteLine("You collapse onto the floor. Your limp lifeless empty vessel lays still.");
     Console.WriteLine("You failed to uncover the secrets hidden inside and your ghost is forever trapped within the walls of the Blackthorn Asylum...");
-    Console.WriteLine(" ** GAME OVER **");
-     
+    Console.WriteLine("** GAME OVER **");
     
 }
 
@@ -85,9 +84,14 @@ string input4 = Console.ReadLine();
     else if (input4 == "back")
 {
 
-    Console.WriteLine("Though the portrait is odd, you decide to keep ");
-
-
+    Console.WriteLine("The portrait is unsettling to say the least and now you are starting to feel as if you might not be alone.");
+    Console.WriteLine("You quickly start to make your way out of the dining hall. As you walk down the endless hallway, the sound of banging erupts.");
+    Console.WriteLine("You realize its coming from the walls... your pace shifts from walking to running. The banging becomes faster and louder, causing your ears to ring.");
+    Console.WriteLine("Racing down the toward the front door, but no matter how fast or far you go, it remains just out of reach.");
+    Console.WriteLine("The banging is now deafing. The walls begin to close in on you. You claw at the narrowing walls, desperate for escape, but it’s no use.");
+    Console.WriteLine("Your flashlight slips from your grasp, its beam flickering out as the crushing darkness envelops you completely.");
+    Console.WriteLine("You failed to uncover the secrets hidden inside and your ghost is forever trapped within the walls of Blackthorn Asylum...");
+    Console.WriteLine("** GAME OVER **");
 
 }
 
@@ -108,13 +112,73 @@ string input4 = Console.ReadLine();
 
 
 
-
 else if (input2 == "right")
 {
     Console.WriteLine("You turn to the door on your right and gently push it open. The room inside is a study, long forgotten by time.");
     Console.WriteLine("An antique desk sits in the centre, cluttered with papers and strange, half-finished drawings.");
-    Console.WriteLine("You notice a small cabinet in the corner of the study with a lock on it.");
+    Console.WriteLine("There is also a what appears to be a tiny door on the opposite side of the room.");
+    Console.WriteLine("Do you [inspect] the desk or [crawl] through the tiny door?");
+
+    string input5 = Console.ReadLine();
+
+    if (input5 == "inspect")
+
+    {
+
+        Console.WriteLine("You approach the antique desk, brushing away layers of dust to reveal the scattered papers beneath.");
+        Console.WriteLine("The drawings appear to be diagrams of human anatomy, with the phrase: unlock the mind and release the soul, written in ink.");
+        Console.WriteLine("Among the clutter, you find a journal with E.B. etched into the leather cover. As you open it, you realize it belonged to Dr. Elias Blackthorn.");
+        Console.WriteLine("The entries detail gruesome experiments Blackthorn conducted. He believed he could sever the connection between body and soul.");
+        Console.WriteLine("Suddenly, a cold draft sweeps through the room, flipping the journal’s pages to a specific entry marked with a bloody handprint.");
+        Console.WriteLine("Do you continue to read the [journal] or try to go through the tiny [door]?");
+    }
+    else if (input5 == "crawl")
+    { 
+    Console.WriteLine("You kneel down and push open the tiny door, its rusty hinges groaning. The passage way is cramped and suffocating.");
+    Console.WriteLine("As you crawl through, your flashlight flickers, illuminating unsettling carvings etched into the walls");
+    Console.WriteLine("Suddenly, you hear a voice whispering incoherently, so close it feels like it’s coming from behind you.");
+    Console.WriteLine("Before you can react, the ground beneath you gives away, and you fall through. Your body hits the cold, hard stone floor.");
+    Console.WriteLine("You lay paralyzed. The whispers distort, transforming into sinister, mocking laughter that echoes you bleeding ears.");
+    Console.WriteLine("You failed to uncover the secrets hidden inside and your ghost is forever trapped within the walls of Blackthorn Asylum...");
+    Console.WriteLine("** GAME OVER **");
+
+    
+    }
+        
+
+    string input6 = Console.ReadLine();
+
+        if (input6 == "journal")
+{
+    Console.WriteLine("You flip to the blood stained page, and the entry sends a chill down your spine");
+    Console.WriteLine("The entry reads:The experiment on Patient 21 was sucessful, the soul is severed but not destroyed.");
+    Console.WriteLine("It continues: It lingers, bound to this place; It yearns to be set free, and will use anyone to escape");
+    Console.WriteLine("Before you can process the words, the desk begins to shake violently, its drawers fly open and scatter the papers across the study.");
+    Console.WriteLine("You sense a malevolent spirit is present. You don't waste another second. You hold onto the journal and make a run for the door.");
+    Console.WriteLine("You enter the foyer. The whole asylum is rumbling. You run to the front door and swing it open. You race down the front steps.");
+    Console.WriteLine("You make it to your car and watch as the Blackthorn Asylum comes crumbling down.");
+    Console.WriteLine("Congratulations, you made it out alive and successfully uncovered the secrets of Dr.Elias Blackthorn.");
+
 }
+    else if (input6 == "door")
+    {
+
+        Console.WriteLine("You kneel down and push open the tiny door, its rusty hinges groaning. The passage way is cramped and suffocating.");
+        Console.WriteLine("As you crawl through, your flashlight flickers, illuminating unsettling carvings etched into the walls.");
+        Console.WriteLine("Suddenly, you hear a voice whispering incoherently, so close it feels like it’s coming from behind you.");
+        Console.WriteLine("Before you can react, the ground beneath you gives away, and you fall through. Your body hits the cold, hard stone floor.");
+        Console.WriteLine("You lay paralyzed. The whispers distort, transforming into sinister, mocking laughter that echoes you bleeding ears.");
+        Console.WriteLine("You failed to uncover the secrets hidden inside and your ghost is forever trapped within the walls of Blackthorn Asylum...");
+        Console.WriteLine("** GAME OVER **");
+
+
+    }
+
+    
+}
+
+
+
 else
 {
     Console.WriteLine("You did not type a vaild answer.");
